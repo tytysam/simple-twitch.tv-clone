@@ -5,7 +5,6 @@ import { createStore } from "redux";
 
 import App from "./components/App.js";
 import reducers from "./reducers";
-import actions from "./actions";
 
 const store = createStore(reducers);
 
