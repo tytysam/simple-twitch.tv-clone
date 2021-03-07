@@ -23,7 +23,7 @@ class GoogleAuth extends Component {
   // Set up as an arrow function so that its context is bound to my component
   onAuthChange = (isSignedIn) => {
     if (isSignedIn) {
-      this.props.signIn();
+      this.props.signIn(this.auth.currentUser.get().getId());
     } else {
       this.props.signOut();
     }
