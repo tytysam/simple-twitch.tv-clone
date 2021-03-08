@@ -1,4 +1,4 @@
-# Twitch.tv Clone
+# Twitch.tv Clone | Frontend
 
 React-based application that uses Open Broadcaster Software to supply a video feed, a basic Real Time Message Protocol Server to process the stream, a simple server to track which streams are broadcasting, and a user interface for viewing those streams.
 
