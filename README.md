@@ -9,4 +9,6 @@ Here are some challenges I anticipate running into along the way:
 - Need to handle forms in Redux (Did someone say Redux Forms??)
 - Need to master my CRUD operations in React/Redux
 
+View the accompanying back-end files / repository <a href="https://github.com/tytysam/simple-twitch.tv-clone-be" target="_blank" >here</a>.
+
 See the live app <a href="https://tcs-simple-twitch-clone.netlify.app/" target="_blank" >here</a>.
