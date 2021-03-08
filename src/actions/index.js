@@ -1,4 +1,5 @@
 import streams from "../apis/streams.js";
+import history from "../history.js";
 import {
   SIGN_IN,
   SIGN_OUT,
@@ -28,6 +29,7 @@ export const createStream = (formValues) => {
     const res = await streams.post("/streams", { ...formValues, userId });
 
     dispatch({ type: CREATE_STREAM, payload: res.data });
+    history.push("/");
   };
 };
 
