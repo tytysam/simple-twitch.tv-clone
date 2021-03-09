@@ -1,5 +1,6 @@
 import React from "react";
 import Modal from "../Modal.js";
+import history from "../../history.js";
 
 const StreamDestroy = () => {
   const actions = (
@@ -10,14 +11,14 @@ const StreamDestroy = () => {
   );
 
   return (
-    <div>
-      <div>StreamDestroy</div>
+    <>
       <Modal
         title="Delete Stream"
         content="Are you sure you want to delete this stream?"
         actions={actions}
+        onDismiss={() => history.push("/")}
       />
-    </div>
+    </>
   );
 };
 
