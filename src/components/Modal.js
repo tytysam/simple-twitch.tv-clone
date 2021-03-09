@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import history from "../history.js";
 
 const Modal = ({ title, content, actions, onDismiss }) => {
   return ReactDOM.createPortal(
@@ -9,6 +8,7 @@ const Modal = ({ title, content, actions, onDismiss }) => {
         onClick={(e) => e.stopPropagation()}
         className="ui standard modal visible active"
       >
+        <i onClick={onDismiss} className="close icon"></i>
         <div className="header">{title}</div>
         <div className="content">{content}</div>
         <div className="actions">{actions}</div>
