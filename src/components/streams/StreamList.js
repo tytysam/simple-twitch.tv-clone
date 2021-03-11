@@ -28,6 +28,10 @@ class StreamList extends React.Component {
 
   renderList() {
     return this.props.streams.map((stream) => {
+      if (stream.userId !== this.props.currentUserId) {
+        return null;
+      }
+
       return (
         <div className="item" key={stream.id}>
           {this.renderAdmin(stream)}
